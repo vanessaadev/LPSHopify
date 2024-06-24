@@ -1,0 +1,226 @@
+:root {
+    --CorVerde: #008060;
+    --CorBranco: #f9f9f9;
+    --CorBotão: #212326;
+}
+
+/* Geral */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+body {
+    font-family: "Roboto", Sans-serif;
+    margin: 0 6rem;
+    box-sizing: border-box;
+
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+/* Cores */
+.CorVerde {
+    background-color: var(--CorVerde);
+}
+
+.CorBotao {
+    background-color: var(--CorBotão);
+}
+
+.CorTextoVerde {
+    color: var(--CorVerde)
+}
+
+/* Criação de Header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    background-color: #008060;
+    color: #f9f9f9;
+}
+
+header div img {
+    margin: 1rem 0 2rem;
+    width: 6rem;
+}
+
+.PaddingTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    align-items: center;
+}
+
+
+header form{
+    display: flex;
+    margin: 1rem;
+    gap: 0.8rem;
+}
+
+header form input{
+    padding: 11px 10px;
+    border-radius: 5px;
+    border: transparent; 
+}
+
+input:focus {   
+    outline-color: #008060; 
+    box-shadow: -3px -3px 10px rgb(11, 165, 127);
+    transition: 0.2s;
+}
+
+header form button {
+    color: #f9f9f9;
+    background-color: #212326;
+    border: transparent;
+    border-radius: 4px;
+    padding: 0.7rem 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+header div p{
+    font-size: 0.8rem;
+    margin: 0 15rem 2rem;
+    text-align: center;
+}
+
+section .waves {
+    position: absolute;
+    left: 6rem;
+    right: 6rem;
+}
+
+.computer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/* informações e parceiros */
+.informacoes, .parceiros {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 8rem;
+    gap: 2rem;
+}
+
+.grupo {
+    font-size: 0.8rem;
+    margin: 1rem;
+}
+
+.grupo h5 {
+    font-size: 0.8rem;
+}
+
+.parceiros {
+    margin: 4rem 7rem;
+    border-top: 1px solid #8b8a8a;
+    border-bottom: 1px solid #8b8a8a;
+}
+
+.botaoVerde {
+    color: #f9f9f9;
+    background-color: var(--CorVerde);
+    border: transparent;
+    border-radius: 4px;
+    margin: 1.8rem;
+    padding: 0.7rem 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.avaliacoes {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 2rem 16em;
+}
+
+.textoAvaliacao {
+    color: #3a3939;
+    font-size: 1.3rem;
+}
+
+.nomeAutor {
+    text-transform: uppercase;
+    color: #3a3939;
+    font-size: 0.8rem;
+}
+
+/* Fim Avaliações e parceiros */
+
+/* duvidas */
+.duvidas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 14em;
+}
+
+.duvidas article{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #bdbdbd;;
+}
+
+.duvidas article i {
+    font-size: 1.2rem;
+}
+
+.duvidas h3 {
+    font-size: 1.5rem;
+    color: var(--CorVerde);
+    text-align: center;
+}
+
+/* Rodapé */
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    margin: 5rem 8rem 2rem;
+    gap: 2rem;
+}
+
+footer a {
+    text-transform: capitalize;
+    color: var(--CorVerde);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+footer a:hover {
+    transition: 0.8s;
+    border: 1px solid var(--CorVerde);
+    border-radius: 5px;
+    padding: 8px;
+
+}
+
+
+/* Rotação Icones */
+
+i {
+   transition: all 0.7s; 
+}
+
+.rotated:hover {
+    transition: 0.7s;
+    transform: rotate(90deg); /* Equal to rotateZ(45deg) */
+}
+
+
+
